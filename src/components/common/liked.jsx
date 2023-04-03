@@ -11,7 +11,7 @@ class Like extends Component {
     render() { 
         return (
             <div style={{cursor : "pointer"}} >
-            { this.props.liked  ?  
+            { !this.props.liked  ?  
             <FontAwesomeIcon onClick={this.props.onClick} icon={faHeart} /> : 
             <FontAwesomeIcon onClick={this.props.onClick} icon={faThumbsDown} />} 
             </div>

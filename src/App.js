@@ -49,7 +49,7 @@ class App extends Component {
  render() { 
     return (
       <div className="App">
-      <Navbar totalCounters={this.state.counters.filter(c => c.value>0).length}/>
+      {/* <Navbar totalCounters={this.state.counters.filter(c => c.value>0).length}/>
       <main className="container">
 
       <Counters 
@@ -58,7 +58,7 @@ class App extends Component {
       onDecrement={this.handleDecrement} 
       onReset={this.handleReset} 
       onDelete={this.handleDelete} />
-      </main>
+      </main> */}
       <Movies/>
     </div>
     );
