@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
+import {faThumbsDown} from '@fortawesome/free-solid-svg-icons';
 
 
 
 class Like extends Component {
-    state = {  } 
+
+
     render() { 
-        return ();
+        return (
+            <div style={{cursor : "pointer"}} >
+            { this.props.liked  ?  
+            <FontAwesomeIcon onClick={this.props.onClick} icon={faHeart} /> : 
+            <FontAwesomeIcon onClick={this.props.onClick} icon={faThumbsDown} />} 
+            </div>
+        );
     }
 }
  
